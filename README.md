@@ -18,14 +18,12 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
         <a-entity id="Child2" position="-10 0 0" scale="1 1 1" rotation="0 0 0" ></a-entity>
         <a-entity id="Child3" position="-15 0 0" scale="1 1 1" rotation="0 0 0" ></a-entity>       
     </a-entity> 
-</body>
 ```
 *Child Objects can have placeholder geometry (Ex. Child 1 has shpere geometry) and can be erased by toggling retainChildren.
 
 ### How it works and Why
 
 Designed to be used on an HTMLCollection consistent of a parent object and many child objects. This is used for arrays of objects that require precise transformations such as groups of buildings, vehicles and trees (See:Example Image)
-
 
 - Takes geometry and material of parent entity Oject3D.
 - Populates parent Oject3d with number of child entities and corresponding transformations using InstancedMesh of parent geometry and material**.
