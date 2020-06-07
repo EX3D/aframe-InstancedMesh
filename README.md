@@ -42,6 +42,9 @@ Designed to be used on an HTMLCollection consistent of a parent object and many 
 | `mergeInstances`    | Merge all instances into one single mesh (This would be used to reduce reuqest animation calls)| `false` | No |
 | `frustumCulled` | Culls non visible meshInstances | `true` | No |
 
+##Tested on:
+A-Frame v1.0.4
+
 ## WIP
 - Urgent!! Succesfully read child entities´s transformations and set matrix values correspondingly !!!!! Right now transformations are random.
 - Implement schema components toggle: Right now behaviro is set to default values.
