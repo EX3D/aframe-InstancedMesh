@@ -6,7 +6,7 @@ W.I.P Component for A-Frame entities to leverage threejs InstancedMesh.
 
 
 
-Component A-Frame to take advantage of threejs instanced rendering. The objective behind this component is reducing the overall number of calls for gorups of entities sharing geometry and material while conserving traditional a-frame notation. Using a higher level of abstaction with InstancedMesh this component will support native geometry as well as imported geometry such as .obj parsing for threejs BufferGeometry.
+Component A-Frame to take advantage of threejs instanced rendering. The objective behind this component is reducing the overall number of calls for groups of entities sharing geometry and material while using traditional a-frame notation. Using a higher level of abstaction with InstancedMesh this component will support native geometry as well as imported geometry such as .obj parsing for threejs BufferGeometry.
 
 This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeometries)
 
