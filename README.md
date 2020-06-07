@@ -42,7 +42,7 @@ Designed to be used on an HTMLCollection consistent of a parent object and many 
 | `mergeInstances`    | Merge all instances into one single mesh (This would be used to reduce reuqest animation calls)| `false` | No |
 | `frustumCulled` | Culls non visible meshInstances | `true` | No |
 
-##Tested on:
+## TESTED ON
 A-Frame v1.0.4
 
 ## WIP
