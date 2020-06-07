@@ -24,7 +24,7 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
 
 ### How it works and Why
 
-Designed to be used on an HTMLCollection consistent of a parent object and many child objects. This is used for arrays of objects that require precise transfurmations such as groups of buildings.
+Designed to be used on an HTMLCollection consistent of a parent object and many child objects. This is used for arrays of objects that require precise transformations such as groups of buildings, vehicles and trees (See:Example Image)
 
 
 - Takes geometry and material of parent entity Oject3D.
