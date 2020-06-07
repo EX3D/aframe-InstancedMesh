@@ -2,6 +2,10 @@
 
 W.I.P Component for A-Frame entities to leverage threejs InstancedMesh. 
 
+![Example Image](https://github.com/EX3D/aframe-InstancedMesh/blob/master/aframe%20instancedmesh%20Example.jpg)
+
+
+
 Component A-Frame to take advantage of threejs instanced rendering. The objective behind this component is reducing the overall number of calls for gorups of entities sharing geometry and material while conserving traditional a-frame notation. Using a higher level of abstaction with InstancedMesh this component will support native geometry as well as imported geometry such as .obj parsing for threejs BufferGeometry.
 
 This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeometries)
@@ -23,11 +27,10 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
 Designed to be used on an HTMLCollection consistent of a parent object and many child objects. This is used for arrays of objects that require precise transfurmations such as groups of buildings.
 
 
-
-1.Takes geometry and material of parent entity Oject3D.
-2.Populates parent Oject3d with number of child entities and corresponding transformations using InstancedMesh of parent geometry and material**.
-3.Erases parent entityobject3d original geometry.
-4.Erases children from DOM leaving only parent entity.
+- Takes geometry and material of parent entity Oject3D.
+- Populates parent Oject3d with number of child entities and corresponding transformations using InstancedMesh of parent geometry and material**.
+- Erases parent entityobject3d original geometry.
+- Erases children from DOM leaving only parent entity.
 
 **Right now this component creates a .clone() of parent material because of a known threejs limitation.
 
