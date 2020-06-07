@@ -16,9 +16,13 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
     </a-entity> 
 </body>
 ```
+*Child Objects can have placeholder geometry (Ex. Child 1 has shpere geometry) and can be erased by toggling retainChildren.
+
 ### How it works and Why
 
-Designed to be used on an HTMLCollection consistent of a parent object and many placeholder objects.
+Designed to be used on an HTMLCollection consistent of a parent object and many child objects. This is used for arrays of objects that require precise transfurmations such as groups of buildings.
+
+
 
 1.Takes geometry and material of parent entity Oject3D.
 2.Populates parent Oject3d with number of child entities and corresponding transformations using InstancedMesh of parent geometry and material**.
