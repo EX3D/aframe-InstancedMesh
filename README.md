@@ -38,7 +38,7 @@ Designed to be used on an HTMLCollection consistent of a parent object and many 
 | `frustumCulled` | Culls non visible meshInstances | `true` | No |
 
 ## WIP
--Urgent!! Succesfully read child entities´s transformations and set matrix values correspondingly !!!!! Right now transformations are random.
--Implement schema components toggle: Right now behaviro is set to default values.
--Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
--Allow some kind of randomization for materials and transformations (This is last priority because this has no use  for our main project)
+- Urgent!! Succesfully read child entities´s transformations and set matrix values correspondingly !!!!! Right now transformations are random.
+- Implement schema components toggle: Right now behaviro is set to default values.
+- Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
+- Allow some kind of randomization for materials and transformations (This is last priority because this has no use  for our main project)
