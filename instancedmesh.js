@@ -21,16 +21,16 @@ AFRAME.registerComponent('instancedmesh', {
             var scale = new THREE.Vector3();
             var quaternion = new THREE.Quaternion();  
             return function ( i, matrix ) { 
-                position.x = el.children[i].components.position.data.x;
-                position.y = el.children[i].components.position.data.y;
-                position.z = el.children[i].components.position.data.z;
-                rotation.x = el.children[i].components.rotation.data.x;
-                rotation.y = el.children[i].components.rotation.data.y;
-                rotation.z = el.children[i].components.rotation.data.z;
+                position.x = el.children[i].object3D.position.x;
+                position.y = el.children[i].object3D.position.y;
+                position.z = el.children[i].object3D.position.z;
+                rotation.x = el.children[i].object3D.rotation.x;
+                rotation.y = el.children[i].object3D.rotation.y;
+                rotation.z = el.children[i].object3D.rotation.z;
                 quaternion.setFromEuler( rotation );
-                scale.x = el.children[i].components.scale.data.x;
-                scale.y = el.children[i].components.scale.data.y;
-                scale.z = el.children[i].components.scale.data.z;
+                scale.x = el.children[i].object3D.scale.x;
+                scale.y = el.children[i].object3D.scale.y;
+                scale.z = el.children[i].object3D.scale.z;
                 matrix.compose( position, quaternion, scale );
             } //High verbosity because imma N00b don´t know how to access matrix on an uninitialized object 
         }();  
