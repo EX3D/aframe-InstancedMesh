@@ -19,7 +19,7 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
         <a-entity id="Child3" position="-15 0 0" scale="1 1 1" rotation="0 0 0" ></a-entity>       
     </a-entity> 
 ```
-*Child Objects can have placeholder geometry (Ex. Child 1 has shpere geometry) and can be erased by toggling retainChildren.
+*Child Objects can have placeholder geometry (Ex. Child 1 has sphere geometry) and can be erased by toggling retainChildren.
 
 ### How it works and Why
 
@@ -36,17 +36,16 @@ Designed to be used on an HTMLCollection consistent of a parent object and many 
 
 | Property | Description | Default Value | Implemented |
 | -------- | ----------- | ------------- | ------------|
-| `retainParent`    | Retain Parent Geometry | `false` | No |
+| `retainParent`    | Retain Parent Geometry | `false` | Yes |
 | `retainChildren`    | Retain Children in DOM | `false` | No |
-| `inheritMat`    | Use Parent Material | `false` | No |
+| `inheritMat`    | A-frame entity will now use cloned Material | `true` | Yes |
 | `mergeInstances`    | Merge all instances into one single mesh (This would be used to reduce reuqest animation calls)| `false` | No |
-| `frustumCulled` | Culls non visible meshInstances | `true` | No |
+| `frustumCulled` | Culls non visible meshInstances | `true` | Yes |
 
 ## TESTED ON
 A-Frame v1.0.4
 
 ## WIP
-- Urgent!! Succesfully read child entities´s transformations and set matrix values correspondingly !!!!! Right now transformations are random.
-- Implement schema components toggle: Right now behaviro is set to default values.
+- Implement schema components: Reatin Children & mergeinstances
 - Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
 - Allow some kind of randomization for materials and transformations (This is last priority because this has no use  for our main project)
