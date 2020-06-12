@@ -12,7 +12,7 @@ This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeo
 
 - Implement schema components: Retain Children & mergeinstances
 
-- As of now threejs does not cull individual geometries so the resulting instancedmesh will be culled depending on the paren position. I will add a tick component that recreates mesh instancing depending if child enitites intersect with camera frustum.
+- As of now threejs does not cull individual geometries so the resulting instancedmesh will inherit the original bounding sphere of the parent object. I will add a tick component that recreates mesh instancing depending if child enitites intersect with camera frustum.
 
 - Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
 
