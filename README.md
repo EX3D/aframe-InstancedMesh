@@ -4,11 +4,19 @@ W.I.P Component for A-Frame entities to leverage threejs InstancedMesh.
 
 ![Example Image](https://github.com/EX3D/aframe-InstancedMesh/blob/master/aframe%20instancedmesh%20Example.jpg)
 
-
-
 Component A-Frame to take advantage of threejs instanced rendering. The objective behind this component is reducing the overall number of calls for groups of entities sharing geometry and material while using traditional a-frame notation. Using a higher level of abstaction with InstancedMesh this component will support native geometry as well as imported geometry such as .obj parsing for threejs BufferGeometry.
 
 This leverages type of threejs Mesh (InstancedMesh) and will use (mergeBufferGeometries)
+
+## WIP
+
+- Implement schema components: Retain Children & mergeinstances
+
+- As of now threejs does not cull individual geometries so the resulting instancedmesh will be culled depending on the paren position. I will add a tick component that recreates mesh instancing depending if child enitites intersect with camera frustum.
+
+- Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
+
+- Allow some kind of randomization for materials and transformations (This is last priority because this has no use  for our main project)
 
 ### A-Frame entity notation
 
@@ -44,8 +52,3 @@ Designed to be used on an HTMLCollection consistent of a parent object and many 
 
 ## TESTED ON
 A-Frame v1.0.4
-
-## WIP
-- Implement schema components: Reatin Children & mergeinstances
-- Implement mergeInstances using three js BufferGeometryUtils.mergeBufferGeometries
-- Allow some kind of randomization for materials and transformations (This is last priority because this has no use  for our main project)
