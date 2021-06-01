@@ -1,4 +1,4 @@
-# aframe-InstancedMesh
+# aframe-instanced-mesh
 
 W.I.P Component for A-Frame entities to leverage threejs InstancedMesh. 
 
